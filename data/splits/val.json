@@ -1,0 +1,104 @@
+[
+  {
+    "image_id": "train_79",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_79.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_79_anno.bmp"
+  },
+  {
+    "image_id": "train_1",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_1.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_1_anno.bmp"
+  },
+  {
+    "image_id": "train_69",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_69.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_69_anno.bmp"
+  },
+  {
+    "image_id": "train_23",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_23.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_23_anno.bmp"
+  },
+  {
+    "image_id": "train_13",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_13.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_13_anno.bmp"
+  },
+  {
+    "image_id": "train_83",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_83.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_83_anno.bmp"
+  },
+  {
+    "image_id": "train_11",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_11.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_11_anno.bmp"
+  },
+  {
+    "image_id": "train_19",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_19.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_19_anno.bmp"
+  },
+  {
+    "image_id": "train_5",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_5.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_5_anno.bmp"
+  },
+  {
+    "image_id": "train_67",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_67.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_67_anno.bmp"
+  },
+  {
+    "image_id": "train_41",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_41.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_41_anno.bmp"
+  },
+  {
+    "image_id": "train_48",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_48.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_48_anno.bmp"
+  },
+  {
+    "image_id": "train_36",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_36.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_36_anno.bmp"
+  },
+  {
+    "image_id": "train_73",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_73.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_73_anno.bmp"
+  },
+  {
+    "image_id": "train_56",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_56.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_56_anno.bmp"
+  },
+  {
+    "image_id": "train_55",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_55.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_55_anno.bmp"
+  },
+  {
+    "image_id": "train_34",
+    "subset": "train",
+    "image_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_34.bmp",
+    "mask_path": "/home/abhirup/medical-image-segmentation/data/raw/Warwick_QU_Dataset/train_34_anno.bmp"
+  }
+]

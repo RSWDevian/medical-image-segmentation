@@ -1,0 +1,56 @@
+# Experiment 3: identical to configs/config.yaml except the loss is
+# BCEWithLogitsLoss only (no Dice term), to isolate the effect of the loss
+# function described in README.md "Loss Function". Separate checkpoints/
+# outputs dirs so this run does not overwrite the baseline (Experiment 1)
+# results.
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  splits_dir: "data/splits"
+  image_size: 512
+  val_fraction: 0.2
+  split_seed: 42
+
+model:
+  name: "unet"
+  in_channels: 3
+  out_channels: 1
+  base_channels: 64
+  depth: 4
+
+loss:
+  name: "bce"
+  bce_weight: 0.5
+  dice_weight: 0.5
+
+training:
+  epochs: 50
+  batch_size: 4
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-5
+  optimizer: "adamw"
+  num_workers: 4
+  seed: 42
+  early_stopping_patience: 10
+  amp: true
+  grad_clip_norm: 1.0
+
+augmentation:
+  enabled: true
+  horizontal_flip_prob: 0.5
+  vertical_flip_prob: 0.5
+  rotation_degrees: 30
+  scale_range: [0.9, 1.1]
+  random_crop: true
+  crop_padding: 32
+
+paths:
+  checkpoints_dir: "checkpoints/exp3_bce_only"
+  outputs_dir: "outputs/exp3_bce_only"
+  predictions_dir: "outputs/exp3_bce_only/predictions"
+  visualizations_dir: "outputs/exp3_bce_only/visualizations"
+  metrics_dir: "outputs/exp3_bce_only/metrics"
+
+inference:
+  threshold: 0.5

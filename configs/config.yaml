@@ -1,0 +1,55 @@
+# Configuration for GlaS gland segmentation training.
+# All paths are relative to the repository root and resolved with pathlib,
+# so this file works regardless of the current working directory the
+# scripts are invoked from.
+
+data:
+  raw_dir: "data/raw"                 # extracted Warwick_QU_Dataset lives here
+  processed_dir: "data/processed"     # resized/cached tensors (optional cache)
+  splits_dir: "data/splits"           # train/val/test image-id lists (json)
+  image_size: 512                     # images and masks are resized to (image_size, image_size)
+  val_fraction: 0.2                   # 17/85 ~= 0.2 -> 68 train / 17 val, see split.py
+  split_seed: 42                      # deterministic train/val split
+
+model:
+  name: "unet"
+  in_channels: 3
+  out_channels: 1                     # binary segmentation -> single logit channel
+  base_channels: 64                   # channel count after the first encoder block
+  depth: 4                            # number of downsampling stages
+
+loss:
+  name: "bce_dice"                    # one of: bce, dice, bce_dice
+  bce_weight: 0.5
+  dice_weight: 0.5
+
+training:
+  epochs: 50
+  batch_size: 4
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-5
+  optimizer: "adamw"
+  num_workers: 4
+  seed: 42
+  early_stopping_patience: 10         # epochs without val Dice improvement before stopping
+  amp: true                           # use mixed precision automatically when CUDA is available
+  grad_clip_norm: 1.0
+
+augmentation:
+  enabled: true
+  horizontal_flip_prob: 0.5
+  vertical_flip_prob: 0.5
+  rotation_degrees: 30
+  scale_range: [0.9, 1.1]
+  random_crop: true
+  crop_padding: 32                    # pad before random crop back to image_size
+
+paths:
+  checkpoints_dir: "checkpoints"
+  outputs_dir: "outputs"
+  predictions_dir: "outputs/predictions"
+  visualizations_dir: "outputs/visualizations"
+  metrics_dir: "outputs/metrics"
+
+inference:
+  threshold: 0.5
