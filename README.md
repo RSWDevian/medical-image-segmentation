@@ -347,22 +347,4 @@ pytest
 
 ---
 
-## Interview Concepts Demonstrated
 
-This project is designed to be defensible in a technical interview. Concepts it demonstrates end-to-end:
-
-- Semantic segmentation (pixel-wise binary classification)
-- U-Net / encoder-decoder architecture, implemented from scratch
-- Skip connections and why they matter for localization
-- Dice loss and why it helps with class imbalance
-- BCE loss and why it's combined with Dice rather than used alone
-- IoU vs. Dice, and their exact mathematical relationship
-- Handling class imbalance in medical image segmentation
-- Spatially-consistent image/mask augmentation
-- Why masks require nearest-neighbor (not bilinear/bicubic) interpolation
-- Strict train / validation / test separation, with the test set touched exactly once
-- Probability thresholding for binary segmentation
-- Medical image preprocessing (H&E histology-specific normalization choices)
-- Histopathology image analysis and its differences from natural-image CV
-
-See `docs/interview_notes.md` for a full Q&A-style technical deep dive, including how this approach would scale to real whole-slide images.
